@@ -16,7 +16,7 @@ title: Showcase
             <p>{{md_file.description}}</p>
             {% assign content = md_file.content | strip_newlines %}
             {% if content != ""  %}
-            <a type="button" class="btn btn-secondary" href="{{md_file.url}}">More information</a>
+            <a type="button" class="btn btn-secondary" href="{{site.baseurl}}/{{md_file.url}}">More information</a>
             {% endif %}
         </div>
     {% endfor %}
