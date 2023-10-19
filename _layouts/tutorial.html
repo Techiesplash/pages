@@ -1,0 +1,26 @@
+---
+layout: default
+title: {{page.title}}
+---
+{% assign user_content = site.pages | where: "name", "user.md" | first %}
+
+{% if page.author %}}
+{% assign author = page.author %}
+{% else %}
+{% assign author = user_content.username %}
+{% endif %}
+
+<div class="panel-parent">
+    <div class="text-center">
+        <h2><a class="gradient-text">{{page.title}}</a></h2>
+        <h6>{{page.description}}</h6>
+    </div>
+    <div class="panel">
+        <blockquote class="blockquote">
+            <small>
+                {{page.content | markdownify | fenced_code_blocks }}
+            </small>
+            <footer class="blockquote-footer">{{author}}</footer>
+        </blockquote>
+    </div>
+</div>
