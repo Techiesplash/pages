@@ -141,10 +141,6 @@ header .logo-container img {
     }
 }
 
-.panel, .panel-child, .panel-parent {
-    animation: slideUp 0.5s ease-out;
-}
-
 .panel-tight {
     background-color: var(--color-crust);
     border-radius: 0.5rem;
@@ -264,7 +260,6 @@ header .logo-container img {
 .btn-secondary:hover::before {
     background-position: 100% 100%;
 }
-
 
 @keyframes gradientAnimation {
     0% {

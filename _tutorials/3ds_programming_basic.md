@@ -26,8 +26,6 @@ Please see that for up to date install instructions.
 We should do both before going forward. You should have your project set up for this.
 
 And if you are using VSCode, I would recommend you get the include paths set up.
-
-A word of advice: ALWAYS comment what your code does whenever possible.
 ## Begin coding
 
 Start by including 'stdio.h' (or 'cstdio'!) and '3ds.h'.

@@ -6,13 +6,14 @@ layout: default
 <div class="row panel-parent">
     <h2 class="text-center"><a class="gradient-text">About myself</a></h2>
     <div class="col-lg-3 col-md-3 col-sm-4 col-6 panel text-center">
-        <h5>{{user_content.username}}</h5>
-        <h6><a>{{user_content.your_name}} - {{user_content.pronouns}}</a></h6>
+        <h3><b><i>{{user_content.your_name}}</i></b></h3>
+        <h6>{{user_content.pronouns}}</h6>
+        <p><small>Also known as <b><i>{{user_content.alias}}</i></b></small></p>
         <p class="text-center"><small><a>{{user_content.role}}</a></small></p>
+        <hr>
         <img class="rounded mx-auto d-block" src="{{user_content.avatar}}" style="width: 100px" alt="Profile picture">
-
-        <blockquote class="blockquote ">
-            <p><small>{{user_content.quote}}</small></p>
+        <blockquote class="blockquote text-start">
+            <p><small><i><q>{{user_content.quote}}</q></i></small></p>
             <footer class="blockquote-footer">{{user_content.quote_author}}</footer>
         </blockquote>
     </div>

@@ -1,0 +1,271 @@
+/* get fira code font */
+@import url('https://fonts.googleapis.com/css?family=JetBrains Mono');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+/* Change defaults */
+/* set default font */
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: var(--color-base);
+    color: var(--color-text);
+    width: 90%;
+    margin: 1rem auto;
+}
+
+/* color for links */
+a {
+    color: var(--color-mauve);
+    text-decoration: none;
+    font-style: italic;
+}
+
+@media only screen and (orientation: portrait) {
+    html {
+        font-size: 12px;
+    }
+    header .logo-container img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .wip h1 {
+        animation: move 50s linear infinite;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    .wip h1 {
+        animation: move 150s linear infinite;
+    }
+}
+
+
+
+
+/* --- header --- */
+/*header {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--color-crust);
+    border-bottom: 1px solid var(--color-mantle);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+}*/
+
+/* image-container class */
+header .logo-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+@media only screen and (max-width: 767px) {
+    .panel-parent {
+        flex-direction: column-reverse;
+    }
+}
+
+.gradient-text {
+    font-weight: 1000;
+    color: var(--color-text);
+    text-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+    /* gradient animation of blue and pink */
+    background: linear-gradient(
+            90deg,
+            var(--color-blue),
+            var(--color-pink),
+            var(--color-blue)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+}
+
+
+/* --- details --- */
+.details {
+    padding: 1rem 2rem;
+    background-color: var(--color-crust);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+    margin-top: 1rem;
+}
+
+/* --- wip --- */
+.panel {
+    padding: 1rem 2rem;
+    background-color: var(--color-crust);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.panel-child {
+    padding: 1rem 2rem;
+    background-color: var(--color-base);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.panel-parent {
+    padding: 1rem 2rem;
+    background-color: var(--color-mantle);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding-bottom: 2rem;
+}
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.panel-tight {
+    background-color: var(--color-crust);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem 2rem 0.1rem;
+}
+
+.panel-fit {
+    padding: 1rem 2rem;
+    background-color: var(--color-crust);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+    margin-top: 1rem;
+
+    padding-bottom: 3px;
+}
+
+.construction-text {
+    font-weight: 1000;
+    color: var(--color-text);
+    -webkit-text-stroke: 2px var(--color-yellow);
+    /* hazard tape background */
+    background: repeating-linear-gradient(
+            45deg,
+            var(--color-yellow),
+            var(--color-yellow) 10px,
+            var(--color-base) 10px,
+            var(--color-base) 20px
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% auto;
+    background-position: 0% 0%; /* Initial position */
+    text-align: center;
+    animation: gradientAnimation 60s linear infinite; /* Adjust the duration as needed (e.g., 10 seconds) */
+}
+
+.btn-nav
+{
+    color: brightness(var(--color-mauve), 0.7);
+}
+
+.btn-nav:hover
+{
+    color: var(--color-mauve);
+}
+
+
+.btn-primary {
+    position: relative;
+    color: var(--color-mantle);
+    background: var(--color-mauve);
+    overflow: hidden;
+    transition: background 0.4s;
+}
+
+.btn-primary::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -35%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent 33%, rgba(255, 255, 255, 0.3) 33%, rgba(255, 255, 255, 0.3) 66%, transparent 66%);
+    background-size: 200% 200%;
+    transition: background-position 0.5s;
+}
+
+.btn-primary:hover {
+    color: var(--color-mantle);
+    background: var(--color-rosewater);
+}
+
+.btn-primary:active {
+    color: var(--color-mauve) !important;
+}
+
+.btn-primary:hover::before {
+    background-position: 100% 100%;
+}
+
+
+
+.btn-secondary {
+    position: relative;
+    color: var(--color-mantle);
+    background: var(--color-lavender);
+    overflow: hidden;
+    transition: background 0.4s;
+}
+
+.btn-secondary::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -35%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent 33%, rgba(255, 255, 255, 0.3) 33%, rgba(255, 255, 255, 0.3) 66%, transparent 66%);
+    background-size: 200% 200%;
+    transition: background-position 0.5s;
+}
+
+.btn-secondary:hover {
+    color: var(--color-mantle);
+    background: var(--color-rosewater);
+}
+
+.btn-secondary:active {
+    color: var(--color-maroon) !important;
+}
+
+.btn-secondary:hover::before {
+    background-position: 100% 100%;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 200% 0%;
+    }
+}

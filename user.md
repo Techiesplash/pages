@@ -1,16 +1,22 @@
 ---
-your_name: Vincent D.
-username: Techiesplash
-pronouns: Any/All
+your_name: Naya
+alias: Seven of Aces
+pronouns: She/Her
 role: College student, hobbyist developer
-quote: To experiment is to fail. To fail is to learn. To learn is to advance.
-quote_author: Draedon
+quote: Don't be scared about what people think of you, just be you.
+quote_author: Naya
 avatar: https://avatars.githubusercontent.com/u/94077364?v=4
 layout: user
 ---
-![Metrics](https://metrics.lecoq.io/techiesplash?template=classic&base.header=0&gists=1&lines=1&config.timezone=America%2FToronto)
+Hi. I go by Naya.
 
-Hi, I'm Vincent.
+I'm a 17 year old nerd who likes to code sometimes, be it homebrew, desktop applications/utilities, etc.
 
-I'm a 17 year old nerd from the Mojave who likes to code sometimes, be it homebrew, desktop applications, utilities, etc.
-I'm also Aromantic-Asexual and Non-Binary.
+I'm aroace and non-binary... Or at least until I realized I'm a girl recently.
+
+I've mainly been doing C, C++, and C#, though I've also been transitioning to Rust (Most cis Rustacean).
+
+I also have an interest in collecting stuff.
+
+***Trans rights are human rights.
+Human rights are non-negotiable.***

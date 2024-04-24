@@ -1,1 +1,1 @@
-# techiesplash-pages
+Personal pages, toys, etc.
